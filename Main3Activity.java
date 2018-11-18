@@ -6,19 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    Button botonsiguiente;
+public class Main3Activity extends AppCompatActivity {
+    Button botonvolver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        botonsiguiente = (Button)findViewById(R.id.buttonsegunda);
-        botonsiguiente.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_main3);
+        botonvolver = (Button)findViewById(R.id.buttonprimera);
+        botonvolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent botonsiguiente = new Intent(MainActivity.this,Main3Activity.class);
-                startActivity(botonsiguiente);
+                Intent botonvolver = new Intent(Main3Activity.this, MainActivity.class);
+                startActivity(botonvolver);
             }
         });
     }
 }
+
